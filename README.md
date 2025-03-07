@@ -9,22 +9,22 @@ WattWiseAI is an advanced electricity demand forecasting system designed to opti
 
 ## 🚀 Features
 ✅ AI-Powered Predictions – Uses ANN, LightGBM, and Random Forest for accurate forecasting. <br>
-✅ Real-Time Forecasting – Provides live electricity demand predictions. 
-✅ Interactive Dashboard – Built with React for seamless data visualization. 
-✅ Scalable Backend – Developed using Node.js and Python. 
-✅ Machine Learning Integration – Implements TensorFlow for deep learning models. 
-✅ Scenario Analysis – Allows predictions under different conditions. 
-✅ Secure & Efficient – Optimized for high performance and secure data handling. 
+✅ Real-Time Forecasting – Provides live electricity demand predictions. <br>
+✅ Interactive Dashboard – Built with React for seamless data visualization. <br>
+✅ Scalable Backend – Developed using Node.js and Python. <br>
+✅ Machine Learning Integration – Implements TensorFlow for deep learning models. <br>
+✅ Scenario Analysis – Allows predictions under different conditions. <br>
+✅ Secure & Efficient – Optimized for high performance and secure data handling. <br>
 
 ---
 
 ## 🛠️ Tech Stack
-Frontend: React.js (Interactive UI, Graphs, and Reports)
-Backend: Node.js, Express.js, Python (API & Model Integration)
-Database: PostgreSQL / MongoDB (Historical Data Storage)
-Machine Learning Models: ANN (TensorFlow/Keras), LightGBM, Random Forest
-Data Handling: Pandas, NumPy, Scikit-learn
-Deployment: Docker, AWS/GCP for cloud hosting
+Frontend: React.js (Interactive UI, Graphs, and Reports) <br>
+Backend: Node.js, Express.js, Python (API & Model Integration) <br>
+Database: PostgreSQL / MongoDB (Historical Data Storage) <br>
+Machine Learning Models: ANN (TensorFlow/Keras), LightGBM, Random Forest <br>
+Data Handling: Pandas, NumPy, Scikit-learn <br>
+Deployment: Docker, AWS/GCP for cloud hosting <br>
 
 ---
 
@@ -84,10 +84,10 @@ Random Forest	2.50 MW	3.85 MW
 ---
 
 ## 🛠 Future Enhancements
-✅ Deploy AI models as a cloud-based API
-✅ Optimize model hyperparameters for improved accuracy
-✅ Introduce deep reinforcement learning for adaptive energy predictions
-✅ Expand the dataset for better seasonal trend analysis
+✅ Deploy AI models as a cloud-based API <br>
+✅ Optimize model hyperparameters for improved accuracy <br>
+✅ Introduce deep reinforcement learning for adaptive energy predictions <br>
+✅ Expand the dataset for better seasonal trend analysis <br>
 
 ---
 
