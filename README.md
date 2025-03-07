@@ -8,7 +8,7 @@ WattWiseAI is an advanced electricity demand forecasting system designed to opti
 ---
 
 ## 🚀 Features
-✅ AI-Powered Predictions – Uses ANN, LightGBM, and Random Forest for accurate forecasting. 
+✅ AI-Powered Predictions – Uses ANN, LightGBM, and Random Forest for accurate forecasting. <br>
 ✅ Real-Time Forecasting – Provides live electricity demand predictions. 
 ✅ Interactive Dashboard – Built with React for seamless data visualization. 
 ✅ Scalable Backend – Developed using Node.js and Python. 
