@@ -76,10 +76,10 @@ python random_forest.py  # Train the Random Forest Model
 ---
 
 ## 📊 Model Performance & Comparisons
-Model	MAE (Mean Absolute Error)	RMSE (Root Mean Square Error)
-ANN (TensorFlow)	2.34 MW	3.56 MW
-LightGBM	2.42 MW	3.71 MW
-Random Forest	2.50 MW	3.85 MW
+Model	MAE (Mean Absolute Error)	RMSE (Root Mean Square Error) <br>
+ANN (TensorFlow)	2.34 MW	3.56 MW <br>
+LightGBM	2.42 MW	3.71 MW <br>
+Random Forest	2.50 MW	3.85 MW <br>
 
 ---
 
