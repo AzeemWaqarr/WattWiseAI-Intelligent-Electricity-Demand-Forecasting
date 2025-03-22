@@ -15,7 +15,6 @@ WattWiseAI is an advanced AI-powered energy consumption forecasting platform des
 - 🧪 Training & Testing Pipeline with Historical Data
 - 🔍 Actual vs Predicted Demand Analysis
 - 📎 Model Summary Metrics (Confidence, Peak Load Time, etc.)
-- 🕹️ Full Admin Control on Users, License Requests & System Health
 
 ---
 
@@ -36,73 +35,59 @@ WattWiseAI is an advanced AI-powered energy consumption forecasting platform des
 
 git clone https://github.com/yourusername/wattwiseai.git
 cd wattwiseai
-2. Setup Backend (Express + Flask)
+
+### 2. Setup Backend (Express + Flask)
 
 cd backend
 npm install         # Install Express dependencies
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-3. Setup Frontend (React.js)
+
+### 3. Setup Frontend (React.js)
 
 cd frontend
 npm install
 npm start
-4. MongoDB Configuration
+
+### 4. MongoDB Configuration
 Create a MongoDB Atlas Cluster or use MongoDB Compass.
 
 Set your MongoDB URI in .env file in backend:
 
-
 MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/wattwiseai
-⚙️ Key Functionalities
-🔐 Authentication
+
+## ⚙️ Key Functionalities
+
+### 🔐 Authentication
 Signup / SignIn for Admin and EndUser
 
 Role-based dashboard view
 
-📁 Dataset Management
+### 📁 Dataset Management
 Upload datasets by category (Training, Testing, etc.)
 
 Preview, download, delete datasets
 
 Track metadata: name, size, records, upload date
 
-📊 Prediction & Analysis
+### 📊 Prediction & Analysis
 Select City → Run AI Model → View Predictions
 
 View peak hour, expected usage, % change, confidence level
 
 Charts: Actual vs Predicted, Seasonal Trends, Holiday Comparison, Tolerance Accuracy
 
-🔬 Model Training
+### 🔬 Model Training
 Train ANN or LightGBM model for selected city
 
 Hyperparameter tuning via Optuna
 
 Training history storage
 
-📋 License Management (Admin Panel)
-End users can apply/renew license
 
-Admin approves/rejects license requests
-
-Track license status, expiry, type
-
-📸 UI Screenshots (Optional)
-Dashboard (User & Admin)
-
-Upload & Manage Data
-
-Model Training Interface
-
-Prediction Analysis Graphs
-
-Add screenshots in /screenshots/ folder
-
-📤 API Endpoints (Sample)
+### 📤 API Endpoints (Sample)
 Method	Route	Description
-POST	/api/signup	Register user
 POST	/api/login	User login
 GET	/api/user/:username	Get user profile
 POST	/api/upload	Upload dataset
@@ -110,8 +95,8 @@ GET	/api/datasets	Fetch datasets
 POST	/api/start-training	Trigger model training
 POST	/api/predict	Trigger prediction
 GET	/api/model-specs/:city	Fetch prediction summary
-POST	/api/apply-license	Submit license request
-🛡️ Future Enhancements
+
+### 🛡️ Future Enhancements
 Auto-scheduler for prediction generation
 
 Email notifications on model completion
@@ -122,22 +107,5 @@ Interactive SHAP interpretability UI
 
 Integration with power grid APIs
 
-🤝 Contributing
-Fork the repository
 
-Create a new branch (git checkout -b feature-branch)
-
-Commit your changes
-
-Push to your branch
-
-Submit a Pull Request
-
-📄 License
-This project is licensed under the MIT License.
-
-💬 Contact
-For queries or collaboration:
-📧 [yourname@email.com]
-🔗 LinkedIn
 
