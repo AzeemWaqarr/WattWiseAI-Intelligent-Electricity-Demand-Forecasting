@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# ⚡ WattWiseAI - Intelligent Electricity Demand Forecasting System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WattWiseAI is an advanced AI-powered energy consumption forecasting platform designed to provide highly accurate electricity demand predictions. This system utilizes hybrid machine learning models (ANN + LightGBM), enriched data features, and dynamic analytics to empower energy planners, utilities, and consumers to make informed energy management decisions.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Features
 
-### `npm start`
+- 🌐 Role-Based Dashboard (Admin & EndUser)
+- 🧠 AI Forecasting Models: ANN, LightGBM, Hybrid Ensemble
+- 📊 Dynamic Data Upload & Management (CSV)
+- 📈 Real-time Prediction Visualization (Daily, Seasonal, Tolerance Accuracy, etc.)
+- 🗃️ MongoDB Data Storage & Stats Monitoring
+- 📂 Dataset Export (CSV, PDF)
+- 🧪 Training & Testing Pipeline with Historical Data
+- 🔍 Actual vs Predicted Demand Analysis
+- 📎 Model Summary Metrics (Confidence, Peak Load Time, etc.)
+- 🕹️ Full Admin Control on Users, License Requests & System Health
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔧 Tech Stack
 
-### `npm test`
+- **Frontend:** React.js, Tailwind CSS, Recharts, Framer Motion
+- **Backend:** Node.js (Express.js), Python (Flask for ML scripts)
+- **Database:** MongoDB (Atlas + Compass)
+- **Storage:** MongoDB Collections or GridFS (for large files)
+- **ML Models:** ANN (Keras/Tensorflow), LightGBM with Optuna, SHAP for interpretability
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🗂️ Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+wattwiseai/ │ ├── frontend/ │ ├── src/ │ │ ├── components/ │ │ ├── screens/ │ │ ├── App.js │ │ └── index.js │ └── public/ │ ├── backend/ │ ├── server.js (Express server) │ ├── routes/ │ │ ├── authRoutes.js │ │ ├── datasetRoutes.js │ │ ├── predictionRoutes.js │ │ ├── trainingRoutes.js │ │ └── userRoutes.js │ ├── scripts/ │ │ ├── ann_train.py │ │ ├── lightgbm_train.py │ │ ├── hybrid_predict.py │ │ ├── tolerance_accuracy.py │ │ └── seasonal_analysis.py │ └── Result/, City/, Model/, Dataset/ │ └── mongo/ └── wattwiseai database (data_trainingdata, data_testingdata, model_specs, user_data, license_requests etc.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### 1. Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+git clone https://github.com/yourusername/wattwiseai.git
+cd wattwiseai
+2. Setup Backend (Express + Flask)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd backend
+npm install         # Install Express dependencies
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+3. Setup Frontend (React.js)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+cd frontend
+npm install
+npm start
+4. MongoDB Configuration
+Create a MongoDB Atlas Cluster or use MongoDB Compass.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Set your MongoDB URI in .env file in backend:
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/wattwiseai
+⚙️ Key Functionalities
+🔐 Authentication
+Signup / SignIn for Admin and EndUser
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Role-based dashboard view
 
-### Code Splitting
+📁 Dataset Management
+Upload datasets by category (Training, Testing, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Preview, download, delete datasets
 
-### Analyzing the Bundle Size
+Track metadata: name, size, records, upload date
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📊 Prediction & Analysis
+Select City → Run AI Model → View Predictions
 
-### Making a Progressive Web App
+View peak hour, expected usage, % change, confidence level
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Charts: Actual vs Predicted, Seasonal Trends, Holiday Comparison, Tolerance Accuracy
 
-### Advanced Configuration
+🔬 Model Training
+Train ANN or LightGBM model for selected city
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Hyperparameter tuning via Optuna
 
-### Deployment
+Training history storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📋 License Management (Admin Panel)
+End users can apply/renew license
 
-### `npm run build` fails to minify
+Admin approves/rejects license requests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Track license status, expiry, type
+
+📸 UI Screenshots (Optional)
+Dashboard (User & Admin)
+
+Upload & Manage Data
+
+Model Training Interface
+
+Prediction Analysis Graphs
+
+Add screenshots in /screenshots/ folder
+
+📤 API Endpoints (Sample)
+Method	Route	Description
+POST	/api/signup	Register user
+POST	/api/login	User login
+GET	/api/user/:username	Get user profile
+POST	/api/upload	Upload dataset
+GET	/api/datasets	Fetch datasets
+POST	/api/start-training	Trigger model training
+POST	/api/predict	Trigger prediction
+GET	/api/model-specs/:city	Fetch prediction summary
+POST	/api/apply-license	Submit license request
+🛡️ Future Enhancements
+Auto-scheduler for prediction generation
+
+Email notifications on model completion
+
+Real-time database activity alerts
+
+Interactive SHAP interpretability UI
+
+Integration with power grid APIs
+
+🤝 Contributing
+Fork the repository
+
+Create a new branch (git checkout -b feature-branch)
+
+Commit your changes
+
+Push to your branch
+
+Submit a Pull Request
+
+📄 License
+This project is licensed under the MIT License.
+
+💬 Contact
+For queries or collaboration:
+📧 [yourname@email.com]
+🔗 LinkedIn
+
