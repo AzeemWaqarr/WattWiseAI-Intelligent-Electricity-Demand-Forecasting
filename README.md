@@ -29,10 +29,6 @@ WattWiseAI is an advanced AI-powered energy consumption forecasting platform des
 
 ---
 
-## 🗂️ Project Structure
-
-wattwiseai/ │ ├── frontend/ │ ├── src/ │ │ ├── components/ │ │ ├── screens/ │ │ ├── App.js │ │ └── index.js │ └── public/ │ ├── backend/ │ ├── server.js (Express server) │ ├── routes/ │ │ ├── authRoutes.js │ │ ├── datasetRoutes.js │ │ ├── predictionRoutes.js │ │ ├── trainingRoutes.js │ │ └── userRoutes.js │ ├── scripts/ │ │ ├── ann_train.py │ │ ├── lightgbm_train.py │ │ ├── hybrid_predict.py │ │ ├── tolerance_accuracy.py │ │ └── seasonal_analysis.py │ └── Result/, City/, Model/, Dataset/ │ └── mongo/ └── wattwiseai database (data_trainingdata, data_testingdata, model_specs, user_data, license_requests etc.)
-
 
 ## 🚀 Getting Started
 
