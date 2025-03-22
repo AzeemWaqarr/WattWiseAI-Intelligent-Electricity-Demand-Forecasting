@@ -1,97 +1,70 @@
-# WattWiseAI – AI-Based Electricity Demand Forecasting ⚡
+# Getting Started with Create React App
 
----
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 📌 Overview
-WattWiseAI is an advanced electricity demand forecasting system designed to optimize power grid management. It utilizes a hybrid AI approach combining Artificial Neural Networks (ANN), LightGBM, and Random Forest to enhance prediction accuracy. The system analyzes historical consumption data, weather conditions, and seasonal trends, helping utility companies and energy managers make data-driven decisions.
+## Available Scripts
 
----
+In the project directory, you can run:
 
-## 🚀 Features
-✅ AI-Powered Predictions – Uses ANN, LightGBM, and Random Forest for accurate forecasting. <br>
-✅ Real-Time Forecasting – Provides live electricity demand predictions. <br>
-✅ Interactive Dashboard – Built with React for seamless data visualization. <br>
-✅ Scalable Backend – Developed using Node.js and Python. <br>
-✅ Machine Learning Integration – Implements TensorFlow for deep learning models. <br>
-✅ Scenario Analysis – Allows predictions under different conditions. <br>
-✅ Secure & Efficient – Optimized for high performance and secure data handling. <br>
+### `npm start`
 
----
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## 🛠️ Tech Stack
-Frontend: React.js (Interactive UI, Graphs, and Reports) <br>
-Backend: Node.js, Express.js, Python (API & Model Integration) <br>
-Database: PostgreSQL / MongoDB (Historical Data Storage) <br>
-Machine Learning Models: ANN (TensorFlow/Keras), LightGBM, Random Forest <br>
-Data Handling: Pandas, NumPy, Scikit-learn <br>
-Deployment: Docker, AWS/GCP for cloud hosting <br>
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
----
+### `npm test`
 
-## 📂 Project Structure
-📦 WattWiseAI  
-├── 📄 README.md        # Documentation  
-├── 📂 frontend         # React-based UI  
-│   ├── src/components  # UI Components  
-│   ├── src/pages       # Pages and Layouts  
-│   ├── src/api         # API Calls to Backend  
-├── 📂 backend          # Node.js and Python Backend  
-│   ├── server.js       # Express Server  
-│   ├── routes/         # API Routes  
-│   ├── models/         # ML Models (ANN, LightGBM, Random Forest)  
-│   ├── database/       # Data Processing and Storage  
-├── 📂 ml_models        # Machine Learning Models  
-│   ├── ann_model.py    # ANN Model Implementation  
-│   ├── lightgbm_model.py  # LightGBM Model  
-│   ├── random_forest.py   # Random Forest Model  
-├── 📂 data             # Historical electricity and weather datasets  
-├── 📂 scripts          # Data Preprocessing and Analysis Scripts  
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-## ⚡ How to Run the Project
-#### 1️⃣ Clone the Repository
-git clone https://github.com/AzeemWaqarr/WattWiseAI.git  
-cd WattWiseAI  
-#### 2️⃣ Install Dependencies
-Backend (Node.js & Python)
-cd backend  
-npm install  # Install Node.js dependencies  
-pip install -r requirements.txt  # Install Python dependencies  
-Frontend (React.js)
-cd frontend  
-npm install  # Install frontend dependencies  
-#### 3️⃣ Run the Backend
-cd backend  
-node server.js  # Start Node.js server  
-#### 4️⃣ Run the Frontend
-cd frontend  
-npm start  # Start React UI  
-#### 5️⃣ Train & Run the AI Model
-cd ml_models  
-python ann_model.py  # Train the ANN Model  
-python lightgbm_model.py  # Train the LightGBM Model  
-python random_forest.py  # Train the Random Forest Model  
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
----
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 📊 Model Performance & Comparisons
-Model	MAE (Mean Absolute Error)	RMSE (Root Mean Square Error) <br>
-ANN (TensorFlow)	2.34 MW	3.56 MW <br>
-LightGBM	2.42 MW	3.71 MW <br>
-Random Forest	2.50 MW	3.85 MW <br>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-## 🛠 Future Enhancements
-✅ Deploy AI models as a cloud-based API <br>
-✅ Optimize model hyperparameters for improved accuracy <br>
-✅ Introduce deep reinforcement learning for adaptive energy predictions <br>
-✅ Expand the dataset for better seasonal trend analysis <br>
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
----
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## 📬 Contact & Contributions
-🚀 Contributions are welcome! Feel free to fork, submit PRs, or report issues.
-📧 Email: azeem.waqarr@gmail.com
-🔗 GitHub: AzeemWaqarr
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
